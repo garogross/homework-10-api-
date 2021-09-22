@@ -11,7 +11,7 @@ function App() {
   const [isLoading,setIsLoading] = useState(false)
 
   const key = "1J1nly0zBrrMc2SvD0h47avXm7yYS9QhBo7eTWej7jE"
-  const fetchHandler =useCallback( async (value) => {
+  const fetchHandler = useCallback( async (value) => {
     setIsLoading(true)
     try {
       const response =  await fetch(`https://api.unsplash.com/search/collections?page=1&query=${!value ? "images" : value}&client_id=${key}`)
