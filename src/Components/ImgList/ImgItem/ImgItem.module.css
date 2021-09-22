@@ -1,0 +1,26 @@
+.img-div{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ animation: scale 1s;
+ background-color: rgb(4, 67, 92);
+ transition: 0.5s all;
+
+}
+.img-div:hover{
+ transform: scale(1.1);
+}
+
+.img{
+ width: 100%;
+}
+.img-div h2{
+ color: #fff;
+ border-top: 1px solid #fff;
+}
+
+@keyframes scale {
+ from{transform: scale(0);}
+ to{transform: scale(1);}
+
+}

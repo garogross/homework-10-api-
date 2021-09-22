@@ -1,0 +1,25 @@
+.img-list{
+ max-width: 900px;
+ margin: 24px auto;
+ background-color: rgb(151, 151, 151);
+ padding: 24px;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 24px;
+
+}
+
+
+
+
+
+@media(max-width: 700px){
+ .img-list{
+  grid-template-columns: repeat(2,1fr);
+ }
+}
+@media(max-width: 400px){
+ .img-list{
+  grid-template-columns: 1fr;
+ }
+}
