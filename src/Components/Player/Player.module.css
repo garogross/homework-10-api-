@@ -1,0 +1,34 @@
+ .player{
+ width: 100%;
+
+ position: fixed;
+ bottom: -34px;
+ left: 0;
+ transition: all 0.5s;
+}
+
+.player:hover{
+ bottom: 0;
+ left: 0;
+
+}
+.hidden{
+ bottom: -77px
+}
+.player-content{
+ max-width: 960px;
+  margin: 0 auto;
+ -webkit-box-shadow: 0 0 15px 0 #000000; 
+ box-shadow: 0 0 15px 0 #000000;
+ border-radius: 0 0 10px 10px ;
+ display: flex;
+ flex-direction: column;
+}
+
+
+
+@media(max-width: 768px){
+ .player{
+  bottom: 0;
+ }
+}

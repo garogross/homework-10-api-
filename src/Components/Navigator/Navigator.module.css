@@ -1,0 +1,27 @@
+.navigator{
+ position: fixed;
+ left: 50%;
+ top: 0;
+ transform: translate(-50%);
+ border-radius: 0 0 10px 10px ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid var(--main-color);
+ border-top: 0;
+ background-color: rgb(172, 184, 255);
+ z-index: 999;
+}
+.navigator a{
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+ padding: 8px 12px;
+ text-align: center;
+ transition: all 0.5s;
+ white-space: nowrap;
+ 
+}
+.active{
+ background-color: var(--main-color);
+ color: #fff!important;
+}

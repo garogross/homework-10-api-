@@ -1,0 +1,31 @@
+:root{
+  --main-color: rgb(29 33 104)
+}
+
+.app{
+  background-color: var(--main-color);
+  background-image: url(https://images.freeimages.com/images/premium/previews/2219/22198976-music-seamless-background.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+}
+
+@media(max-width: 991px){
+  .container{
+    max-width: 720px;
+  }
+}
+@media(max-width: 768px){
+  .container{
+    max-width: 540px;
+  }
+}

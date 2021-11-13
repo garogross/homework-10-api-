@@ -1,0 +1,36 @@
+.play-item{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ transition: all 0.5s;
+ padding: 8px 0;
+ border-bottom: 1px solid;
+}
+.play-item:hover{
+ background-color: rgb(29 33 104 / 30%);
+}
+.play-item.active{
+ border-bottom: 3px solid var(--main-color);
+ transform: scale(1.02);
+ background-color: rgb(29 33 104 / 30%);
+
+ 
+
+}
+.play-item main{
+ display: flex;
+}
+.play-item img {
+ width: 50px;
+}
+.play-item p{
+ display: flex;
+ flex-direction: column;
+}
+
+@media(max-width: 600px){
+ .play-item main{
+  align-items: flex-start;
+ }
+}
